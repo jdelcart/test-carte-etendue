@@ -3,7 +3,7 @@
 
 #include <stdbool.h>
 
-#define MaxX 39
+#define MaxX 40
 #define MaxY 80
 #define Square_size 30.0
 

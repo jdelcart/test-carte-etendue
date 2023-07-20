@@ -44,7 +44,6 @@ void Display()
 
 int main(int argc, char *argv[])
 {
-	
 	//set_scroll();
 	loadMap(mX, mY);     //Charge la carte
 	p = createPlayer(mX, mY);

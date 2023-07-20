@@ -1,0 +1,123 @@
+Last login: Thu Jul 20 20:27:48 on ttys000
+juliendelcarte@iMac-de-jerome ~ % ls
+Desktop		Downloads	Library		Music		Public
+Documents	Dropbox		Movies		Pictures
+juliendelcarte@iMac-de-jerome ~ % cd Desktop 
+juliendelcarte@iMac-de-jerome Desktop % ls
+FileTableauStatDisplay			projet-step3-FiletableauKeybord
+GLUTandJPG				projet-step3-FiletableauKeybord (1).zip
+SOS animaux				test
+avatars bonshommes			test carte etendue
+proje-step4-scrollingMatrix 		test1
+proje-step4-scrollingMatrix .zip	test2
+projet-step2-FiletableauDynDisplay	test3
+projet-step2-FiletableauDynDisplay.zip
+juliendelcarte@iMac-de-jerome Desktop % cd test\ carte\ etendue 
+juliendelcarte@iMac-de-jerome test carte etendue % ms
+zsh: command not found: ms
+juliendelcarte@iMac-de-jerome test carte etendue % make clean
+rm -rf program
+rm -rf *.o
+juliendelcarte@iMac-de-jerome test carte etendue % make
+gcc -c player.c game.c drawMap.c loadMap.c main.c  -Wall -std=c99 -Wno-deprecated-declarations -framework OpenGL -framework GLUT
+clang: warning: -framework OpenGL: 'linker' input unused [-Wunused-command-line-argument]
+clang: warning: -framework GLUT: 'linker' input unused [-Wunused-command-line-argument]
+drawMap.c:226:7: warning: incompatible pointer types initializing 'int *' with an expression of type 'const struct renard *' [-Wincompatible-pointer-types]
+        int *texture = &renard; //Modèle vu en cours
+             ^         ~~~~~~~
+drawMap.c:234:19: warning: incompatible pointer types passing 'int **' to parameter of type 'GLuint *' (aka 'unsigned int *') [-Wincompatible-pointer-types]
+        glGenTextures(1, &texture);
+                         ^~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h:2498:47: note: passing argument to parameter 'textures' here
+extern void glGenTextures (GLsizei n, GLuint *textures) OPENGL_DEPRECATED(10.0, 10.14);
+                                              ^
+drawMap.c:235:31: warning: incompatible pointer to integer conversion passing 'int *' to parameter of type 'GLuint' (aka 'unsigned int') [-Wint-conversion]
+        glBindTexture(GL_TEXTURE_2D, texture);
+                                     ^~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h:2386:50: note: passing argument to parameter 'texture' here
+extern void glBindTexture (GLenum target, GLuint texture) OPENGL_DEPRECATED(10.0, 10.14);
+                                                 ^
+3 warnings generated.
+gcc -o program player.o game.o drawMap.o loadMap.o main.o -Wall -std=c99 -Wno-deprecated-declarations -framework OpenGL -framework GLUT
+juliendelcarte@iMac-de-jerome test carte etendue % ./program 
+
+################################################################################
+
+#          a                           hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+#                   |       e          hh--bbbb--------------------------bbbb-
+#
+#                   |                  hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+b#
+#                                      hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bb#
+#            e      |                  hh--bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+b--#
+#                   |                  hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbb#
+#                                      hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbb#
+#                   |                  hh--bbbb-------------------------
+bbbb--#
+#                   |                  hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbb#
+#                                      hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbb# 
+#                   |                  hh--bbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbb--#
+#                   |     e            hhbbbbbbbbbbbbbbbbebbbbbbbb
+bbbbbbbbbbbb#
+#                                      hhbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbb# 
+#                   |                  hh--bbbb---------------
+----------bbbb--#
+#                   |                  hhbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbb#
+#                                      hhbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbb#
+#                   |                  hh--bbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbb--#
+#                   |                  hhbbbbbbbbbbbbbbbeb
+bbbbbbbbbbbbbbbbbbbb#
+#                                      hhbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbb#
+#                   |                  hh--bbbb---------
+----------------bbbb--#
+#                   |                  hhbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbb#
+#                                      hhbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbb#
+#                   |                  hh--bbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbb--#
+#                   |                  hhbbbbbbbbbbb
+bbebbbbbbbbbbbbbbbbbbbbbbb#
+#            e                         hhbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#                   |                  hh--bbbb---
+----------------------bbbb--#
+#                   |                  hhbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#                                      hhbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#                   |                  hh--bbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbb--#
+#                   |                  hhbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#                                      hhbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#                   |                  hh--b
+bb--------------------------bbbb--#
+#                   |                  hhbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#                                      hhb
+bbbbbbbbbbbbbbbbbbbbbbebbbbbbbbbbbbb#
+#                   |                  hh
+-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb--#
+#                   |                  h
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#                                      
+hbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#                   |                 
+hh--bbbb--------------------------bbbb--#
+#                   |                
+juliendelcarte@iMac-de-jerome test carte etendue % 

@@ -182,7 +182,6 @@ void drawPlayer(player p)
 	
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
-	
 	glTranslatef(j*Square_size,i*Square_size,0.0f);// Pour le scrolling horizontal
 	//glTranslatef(i*Square_size,j*Square_size,0.0f); //Pour le scrolling vertical
 				
@@ -191,8 +190,8 @@ void drawPlayer(player p)
 	glVertex3f(0.0f, 0.0f, 0.0f);
 	glVertex3f(Square_size, 0.0f, 0.0f);
 	glVertex3f(Square_size,Square_size, 0.0f);
-	glVertex3f(0.0f,Square_size, 0.0f);
-	*/
+	glVertex3f(0.0f,Square_size, 0.0f);*/
+	
 
 	//Avatar vulpin
 	/*glEnable(GL_TEXTURE_2D);
@@ -226,9 +225,11 @@ void drawPlayer(player p)
 
 	int *texture = &renard; //Modèle vu en cours
 	
-	glColor3f(1,0.2,0.2);
+	//glColor3f(1,0.3,0.3);
+	
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
+	glTranslatef(j*Square_size,i*Square_size,0.0f);// Pour le scrolling horizontal
 	
 	glGenTextures(1, &texture);
 	glBindTexture(GL_TEXTURE_2D, texture);
@@ -238,13 +239,17 @@ void drawPlayer(player p)
 	glTranslatef(0.0,0.0,-5.0);
 	
 	glBegin(GL_QUADS);
-	glTexCoord3f(0.0, 1.0, 0.0);glVertex3f(0.0f, 0.0f, 0.0f);
-	glTexCoord3f(1.0, 1.0, 0.0);glVertex3f(Square_size, 0.0f, 0.0f);
-	glTexCoord3f(1.0, 0.0, 0.0);glVertex3f(Square_size,Square_size, 0.0f);
-	glTexCoord3f(0.0, 0.0, 0.0);glVertex3f(0.0f,Square_size, 0.0f);
+	glTexCoord2f(0.0, 0.0);
+	glVertex3f(0.0f, 0.0f, 0.0f);
+	glTexCoord2f(1.0, 0.0);
+	glVertex3f(Square_size, 0.0f, 0.0f);
+	glTexCoord2f(1.0, 1.0);
+	glVertex3f(Square_size,Square_size, 0.0f);
+	glTexCoord2f(0.0, 1.0);
+	glVertex3f(0.0f,Square_size, 0.0f);
 	
-	glEnd(); 
+	glEnd();
 	glFlush();
 	glDisable(GL_TEXTURE_2D); 
-	glutSwapBuffers();	
+	//glutSwapBuffers(); 
 }
