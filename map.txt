@@ -1,0 +1,41 @@
+################################################################################
+#          a                           hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#                   |       e          hh--bbbb--------------------------bbbb--#
+#                   |                  hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#                                      hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#            e      |                  hh--bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb--#
+#                   |                  hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#                                      hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#                   |                  hh--bbbb--------------------------bbbb--#
+#                   |                  hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#                                      hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb# 
+#                   |                  hh--bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb--#
+#                   |     e            hhbbbbbbbbbbbbbbbbebbbbbbbbbbbbbbbbbbbbb#
+#                                      hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb# 
+#                   |                  hh--bbbb--------------------------bbbb--#
+#                   |                  hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#                                      hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#                   |                  hh--bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb--#
+#                   |                  hhbbbbbbbbbbbbbbbebbbbbbbbbbbbbbbbbbbbbb#
+#                                      hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#                   |                  hh--bbbb--------------------------bbbb--#
+#                   |                  hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#                                      hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#                   |                  hh--bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb--#
+#                   |                  hhbbbbbbbbbbbbbbebbbbbbbbbbbbbbbbbbbbbbb#
+#            e                         hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#                   |                  hh--bbbb--------------------------bbbb--#
+#                   |                  hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#                                      hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#                   |                  hh--bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb--#
+#                   |                  hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#                                      hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#                   |                  hh--bbbb--------------------------bbbb--#
+#                   |                  hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#                                      hhbbbbbbbbbbbbbbbbbbbbbbbbebbbbbbbbbbbbb#
+#                   |                  hh--bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb--#
+#                   |                  hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#                                      hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+#                   |                  hh--bbbb--------------------------bbbb--#
+#                   |                  hhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#
+################################################################################
