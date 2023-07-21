@@ -10,6 +10,7 @@
 #include "loadMap.h"
 #include "drawMap.h"
 #include "game.h"
+#include "menu.h"
 
 
 //char **map;
@@ -53,11 +54,13 @@ int main(int argc, char *argv[])
 
 	glutInitWindowSize(mX*Square_size, mY*Square_size);
 
-	glutCreateWindow("Test");
+	glutCreateWindow("Test carte étendue");
 
 	initRendering();
 
+	creation_menu();
 	glutDisplayFunc(Display);
+	glutMouseFunc(handleMouse);
 	glutReshapeFunc(handleResize);
 
 	glutMainLoop();

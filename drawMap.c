@@ -251,5 +251,5 @@ void drawPlayer(player p)
 	glEnd();
 	glFlush();
 	glDisable(GL_TEXTURE_2D); 
-	//glutSwapBuffers(); 
+	glutSwapBuffers(); 
 }

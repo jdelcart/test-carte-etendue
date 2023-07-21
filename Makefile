@@ -9,7 +9,7 @@ FLAGGLUT=-Wno-deprecated-declarations -framework OpenGL -framework GLUT
 endif
 
 FLAG=-Wall -std=c99
-SRCS= player.c game.c drawMap.c loadMap.c main.c 
+SRCS= player.c game.c drawMap.c loadMap.c menu.c main.c 
 OBJET = $(SRCS:.c=.o)
 EXEC= program
 
